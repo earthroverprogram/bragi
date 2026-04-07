@@ -1,0 +1,48 @@
+{
+    "editor.rulers": [
+        80
+    ],
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.aux": true,
+        "**/*.nav": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/*.egg-info": true,
+        "**/*.pyc": true,
+        "**/data/**": true
+    },
+    "files.watcherExclude": {
+        "**/__pycache__": true,
+        "**/*.aux": true,
+        "**/*.nav": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/*.egg-info": true,
+        "**/*.pyc": true,
+        "**/.venv/**": true,
+        "**/data/**": true
+    },
+    "search.exclude": {
+        "**/__pycache__": true,
+        "**/*.aux": true,
+        "**/*.nav": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/*.egg-info": true,
+        "**/*.pyc": true,
+        "**/.venv/**": true,
+        "**/data/**": true
+    },
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.tex": "latex"
+    },
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.linting.chktex.enabled": true,
+    "latex-workshop.linting.chktex.exec.path": "/usr/local/bin/chktex",
+    "latex-workshop.formatting.latex": "tex-fmt",
+    "latex-workshop.synctex.afterBuild.enabled": false
+}
