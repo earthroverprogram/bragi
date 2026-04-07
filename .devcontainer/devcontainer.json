@@ -1,6 +1,6 @@
 {
 	"name": "LaTeX on bragi",
-	"image": "ghcr.io/joejcollins/bragi:latest",
+	"image": "ghcr.io/earthroverprogram/bragi:latest",
 	"customizations": {
 		"vscode": {
 			"extensions": [
