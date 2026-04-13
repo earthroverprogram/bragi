@@ -29,3 +29,18 @@ report:
 venv:
     uv venv .venv --clear
     uv sync --frozen
+
+
+texfile := "content/tex/dummy_report.tex"
+
+# Build tex file.
+tex-build:
+    latexmk -pdf -bibtex {{texfile}}
+
+# Clean tex file.
+tex-clean:
+    latexmk -C {{texfile}}
+
+# Auto rebuild on save
+tex-watch:
+    latexmk -pdf -bibtex -pvc content/tex/dummy_report.tex
