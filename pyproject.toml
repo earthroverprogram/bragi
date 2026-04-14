@@ -1,7 +1,6 @@
 [project]
-name = "bragi"
 version = "0.0.1"
-description = "LaTeX report writing."
+description = "LaTeX Writing Repo"
 readme = "README.md"
 requires-python = ">=3.14"
 authors = [{ name = "Joe J Collins", email = "joejcollins@gmail.com" }]
@@ -17,14 +16,11 @@ dependencies = [
     "ipykernel",
     "ipympl",
     "matplotlib",
+    "mkdocs",
     "nbconvert",
     "numpy",
     "ruff",
 ]
-
-[project.urls]
-repository = "https://github.com/earthroverprogram/bragi"
-
 
 [tool.ruff]
 lint.select = ["F", "E", "W", "C90", "I", "PL", "D"]
@@ -40,7 +36,7 @@ module = ["colonel_white.*"]
 follow_untyped_imports = true
 
 [tool.pyright]
-exclude = ["**/__pycache__"]
+exclude = ["**/__pycache__", "**/node_modules", "**/.*", ".venv"]
 reportMissingImports = true
 reportMissingTypeStubs = false
 pythonVersion = "3.14"
@@ -53,7 +49,7 @@ warn_unused_configs = true
 
 [tool.black]
 line-length = 88
-target-version = ["py313"]
+target-version = ["py314"]
 
 [tool.isort]
 profile = "black"

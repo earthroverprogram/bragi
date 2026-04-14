@@ -1,0 +1,36 @@
+---
+name: Publish to GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-gh-pages.yml
+      - docs/**
+      - mkdocs.yml
+
+permissions:
+  contents: write
+  packages: read
+
+jobs:
+  publish-pages:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:latest
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: false
+          clean: true
+          fetch-depth: 0
+
+      - name: Build and deploy to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          export UV_CACHE_DIR=/opt/uv-cache
+          export UV_LINK_MODE=copy
+          make venv
+          make publish

@@ -14,4 +14,6 @@ RUN apt --quiet update \
 
 # Add some labels so it looks nice in Github packages.
 LABEL org.opencontainers.image.source=https://github.com/earthroverprogram/bragi
-LABEL org.opencontainers.image.description="bragi image."
+LABEL org.opencontainers.image.title="bragi image"
+LABEL org.opencontainers.image.description="LaTeX writing repo with Python and R."
+LABEL org.opencontainers.image.authors="Joe J Collins <joejcollins@gmail.com>"

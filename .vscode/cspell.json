@@ -17,6 +17,7 @@
         "joejcollins",
         "latexmk",
         "matplotlib",
+        "mkdocs",
         "mypy",
         "nbconvert",
         "nonstopmode",

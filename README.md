@@ -1,9 +1,8 @@
 # LaTeX Writing Repo
 
-LaTeX writing repo with Jupyter notebooks.
+LaTeX writing repo with Python and R.
 
 For use in a Codespace or devcontainer.
-
 
 # Instructions
 
