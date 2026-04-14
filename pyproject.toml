@@ -1,4 +1,5 @@
 [project]
+name = "bragi"
 version = "0.0.1"
 description = "LaTeX Writing Repo"
 readme = "README.md"
