@@ -19,7 +19,7 @@ jobs:
       image: ghcr.io/${{ github.repository }}:latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           submodules: false
           clean: true
@@ -32,5 +32,5 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           export UV_CACHE_DIR=/opt/uv-cache
           export UV_LINK_MODE=copy
-          make venv
-          make publish
+          just venv
+          just publish

@@ -16,9 +16,13 @@ help:
 lint:
     .venv/bin/ruff check ./src
 
-# Update the lock file from pyproject.toml
+# Update the lock file from pyproject.toml.
 lock:
     uv lock
+
+# Publish the documentation.
+publish:
+	.venv/bin/mkdocs gh-deploy --force --verbose
 
 # Report Python version and pip packages.
 report:
