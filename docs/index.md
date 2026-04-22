@@ -3,7 +3,5 @@
 LaTeX writing repo template with Python and R.
 For use in a Codespace or dev container.
 
-## Instructions
-
 * Use in a [Codespace](codespace.md).
 * Use in a [dev container](dev_container.md).
