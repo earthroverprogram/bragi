@@ -1,6 +1,9 @@
 {
 	"name": "LaTeX on bragi",
 	"image": "ghcr.io/earthroverprogram/bragi:latest",
+	"containerEnv": {
+		"TEXINPUTS": "${containerWorkspaceFolder}/src/erp//:"
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [

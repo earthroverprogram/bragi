@@ -8,7 +8,17 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
 
 # Install LaTeX.
 RUN apt --quiet update \
-    && apt install --assume-yes texlive-latex-extra texlive-extra-utils latexmk tex-fmt just pandoc r-base r-base-dev \
+    && apt install --assume-yes \
+        fonts-inter \
+        fonts-roboto \
+        just \
+        latexmk \
+        pandoc \
+        r-base \
+        r-base-dev \
+        tex-fmt \
+        texlive-extra-utils \
+        texlive-latex-extra \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
 

@@ -1,0 +1,298 @@
+\documentclass{erp-report}
+
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\addto\captionsenglish{\renewcommand{\bibname}{References}}
+
+\reporttitle{Integrated Subsurface Investigation}
+\reportsubtitle{Illustrative findings for a proposed field research site}
+\reportnumber{ERP-EX-2026-001}
+\reportversion{1.0}
+\reportdate{10 August 2026}
+\reporttype{Investigation report}
+\reportstatus{Final example}
+\reportconfidentiality{Client issue - illustrative content}
+
+\clientname{Example Land and Water Partnership}
+\clientcontact{Dr Alex Morgan, Programme Director}
+
+\projectname{North Field Baseline Investigation}
+\projectlocation{Example District, United Kingdom}
+\projectnumber{ERP-P-2026-014}
+
+\preparedby{Jordan Lee, Project Geoscientist}
+\reviewedby{Samira Patel, Technical Lead}
+\approvedby{Taylor Evans, Programme Director}
+
+\begin{document}
+
+\makecover
+
+\reportfrontmatter
+\makedocumentcontrol
+
+\begin{executivesummary}
+  \chapterintro{%
+    This example demonstrates how an Earth Rover Program report can present
+    a clear technical narrative while keeping project content separate from
+    document styling.
+  }
+
+  \lipsum[1]
+
+  \begin{keyfindings}
+    \begin{itemize}
+      \item Three laterally persistent subsurface units were identified.
+      \item The central survey corridor contains the most variable ground.
+      \item No immediate constraint was identified in the illustrative data.
+    \end{itemize}
+  \end{keyfindings}
+
+  \begin{recommendations}[Priority actions]
+    \begin{enumerate}
+      \item Confirm the interpreted boundaries with targeted sampling.
+      \item Retain the baseline data for comparison with later surveys.
+      \item Review the investigation scope before detailed design begins.
+    \end{enumerate}
+  \end{recommendations}
+\end{executivesummary}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\reportmainmatter
+
+\chapter{Introduction}
+\chapterintro{%
+  This chapter defines the commission, site context, reporting basis, and
+  limitations that frame the interpretation presented in later chapters.
+}
+
+\section{Background}
+\lipsum[2-3]
+
+\section{Objectives}
+The illustrative investigation was designed to:
+\begin{itemize}
+  \item establish a reproducible baseline for the project area;
+  \item identify broad lateral and vertical changes in ground conditions;
+  \item highlight locations where focused follow-up work may be useful; and
+  \item communicate uncertainty in a form suitable for client decisions.
+\end{itemize}
+
+\subsection{Reporting basis}
+\lipsum[4][1-4]
+
+\begin{reportnote}[Use of example content]
+  Names, measurements, interpretations, and citations in this document are
+  placeholders. Replace them with verified project information before issue.
+\end{reportnote}
+
+\chapter{Investigation methodology}
+\chapterintro{%
+  The workflow combines desk study, field observations, survey acquisition,
+  quality control, and integrated interpretation.
+}
+
+\section{Desk study}
+\lipsum[5]
+
+\section{Field investigation}
+\lipsum[6]
+
+\subsection{Survey layout}
+\lipsum[7]
+
+\begin{reportfigure}
+  \figureplaceholder[Project location and survey layout]{72mm}
+  \caption{Placeholder for a project location plan with survey lines,
+    investigation points, a north arrow, scale, and coordinate reference.}
+  \label{fig:survey-layout}
+\end{reportfigure}
+
+\subsection{Acquisition sequence}
+The principal field stages are summarized below.
+\begin{enumerate}
+  \item Confirm access, services information, and task controls.
+  \item Establish survey control and record site conditions.
+  \item Acquire the planned measurements with daily quality checks.
+  \item Archive raw data and complete the field record.
+\end{enumerate}
+
+\section{Data quality and limitations}
+\lipsum[8]
+
+\begin{reportwarning}[Interpretive limitation]
+  The plotted boundaries represent an interpretation of indirect
+  measurements. They should not be treated as verified material contacts
+  without appropriate intrusive confirmation.
+\end{reportwarning}
+
+\chapter{Results}
+\chapterintro{%
+  Results are organized by the observations most relevant to the project
+  objectives, with supporting detail retained in the appendices.
+}
+
+\section{Overview}
+\lipsum[9]
+
+\begin{reporttable}
+  \caption{Illustrative summary of interpreted subsurface units.}
+  \label{tab:units}
+  \begin{tabularx}{\textwidth}{@{}p{24mm}p{32mm}X p{25mm}@{}}
+    \toprule
+    \textcolor{ERPTopSoil}{\MakeUppercase{Unit}} &
+    \textcolor{ERPTopSoil}{\MakeUppercase{Depth range}} &
+    \textcolor{ERPTopSoil}{\MakeUppercase{Interpretation}} &
+    \textcolor{ERPTopSoil}{\MakeUppercase{Confidence}} \\
+    \midrule
+    A & 0.0--0.8 m & Variable near-surface material & Moderate \\
+    B & 0.8--3.5 m & Laterally persistent intermediate unit & High \\
+    C & Below 3.5 m & Dense or competent basal material & Moderate \\
+    \bottomrule
+  \end{tabularx}
+\end{reporttable}
+
+\section{Spatial patterns}
+Figure~\ref{fig:result-section} is a placeholder for a processed section.
+\lipsum[10]
+
+\begin{reportfigure}
+  \figureplaceholder[Processed profile with interpreted boundaries]{82mm}
+  \caption{Illustrative processed profile. A final figure should include
+    units, axes, scale, orientation, processing notes, and uncertainty.}
+  \label{fig:result-section}
+\end{reportfigure}
+
+\subsection{Near-surface unit}
+\lipsum[11]
+
+\subsection{Intermediate unit}
+\lipsum[12]
+
+\subsubsection{Local variation}
+\lipsum[13]
+
+\begin{keyfindings}[Result highlights]
+  \begin{itemize}
+    \item Unit B is the most laterally continuous interpreted feature.
+    \item The largest local change occurs between illustrative stations 18
+      and 24.
+    \item Confidence decreases near both ends of the survey coverage.
+  \end{itemize}
+\end{keyfindings}
+
+\chapter{Interpretation and discussion}
+\chapterintro{%
+  The interpretation considers the evidence as a whole and distinguishes
+  observations from project implications.
+}
+
+\section{Integrated interpretation}
+\lipsum[14-15]
+
+As shown in Table~\ref{tab:units}, the interpreted sequence is intentionally
+simple. The project brief \cite{projectbrief} and field record
+\cite{fieldrecord} would normally provide the contextual evidence used to
+test this model.
+
+\section{Uncertainty}
+\lipsum[16]
+
+\begin{summarybox}[Interpretive confidence]
+  Confidence is highest where independent observations agree and coverage is
+  continuous. It is lower at survey margins and where the response may have
+  more than one plausible explanation.
+\end{summarybox}
+
+\section{Implications for the project}
+\lipsum[17]
+
+\chapter{Conclusions and recommendations}
+\chapterintro{%
+  The conclusions answer the stated objectives; the recommendations identify
+  proportionate next steps for reducing uncertainty.
+}
+
+\section{Conclusions}
+\begin{enumerate}
+  \item The example workflow provides continuous coverage of the defined
+    survey corridor.
+  \item Three broad units provide a reasonable first-order explanation of
+    the placeholder data.
+  \item A localized change in the central corridor warrants confirmation if
+    it affects the client's next decision.
+  \item The stated limitations should remain attached to any reuse of the
+    interpreted outputs.
+\end{enumerate}
+
+\section{Recommendations}
+\begin{recommendations}
+  \begin{enumerate}
+    \item Replace all placeholder material with verified project evidence.
+    \item Confirm the central anomaly using a targeted independent method.
+    \item Review the conceptual model after new evidence becomes available.
+    \item Record any departure from the stated scope in the next revision.
+  \end{enumerate}
+\end{recommendations}
+
+\reportbackmatter
+\addcontentsline{toc}{chapter}{References}
+\begin{thebibliography}{9}
+  \bibitem{projectbrief}
+  Earth Rover Program.
+  \emph{North Field baseline investigation: example project brief}.
+  Illustrative unpublished project document, 2026.
+
+  \bibitem{fieldrecord}
+  Earth Rover Program.
+  \emph{North Field baseline investigation: example field record}.
+  Illustrative unpublished field document, 2026.
+\end{thebibliography}
+
+\appendix
+\chapter{Supporting field record}
+\chapterintro{%
+  Appendices retain supporting information without interrupting the main
+  decision narrative.
+}
+
+\section{Illustrative field log}
+\lipsum[18]
+
+\begin{reporttable}
+  \caption{Example field activity record.}
+  \label{tab:field-log}
+  \begin{tabularx}{\textwidth}{@{}p{24mm}p{30mm}X@{}}
+    \toprule
+    \textcolor{ERPTopSoil}{\MakeUppercase{Time}} &
+    \textcolor{ERPTopSoil}{\MakeUppercase{Activity}} &
+    \textcolor{ERPTopSoil}{\MakeUppercase{Record}} \\
+    \midrule
+    08:15 & Site check & Access and controls confirmed \\
+    09:05 & Calibration & Reference response within tolerance \\
+    12:40 & Quality check & Repeat line accepted \\
+    16:20 & Close-out & Raw files and notes archived \\
+    \bottomrule
+  \end{tabularx}
+\end{reporttable}
+
+\chapter{Processing record}
+\section{Illustrative configuration}
+The technical listing environment can retain short, reproducible settings
+without introducing a separate visual style.
+
+\begin{technicalcode}
+project: ERP-P-2026-014
+coordinate_reference: REPLACE_WITH_PROJECT_CRS
+sampling_interval_m: 0.50
+quality_control:
+  repeat_threshold_percent: 5
+  retain_raw_data: true
+\end{technicalcode}
+
+\lipsum[19]
+
+\end{document}
