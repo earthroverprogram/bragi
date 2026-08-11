@@ -44,6 +44,30 @@
     "latex-workshop.synctex.afterBuild.enabled": true,
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-lualatex",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-halt-on-error",
+                "-lualatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (LuaLaTeX)",
+            "tools": [
+                "latexmk-lualatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "latexmk (LuaLaTeX)",
     "latex-workshop.linting.chktex.enabled": true,
     "latex-workshop.linting.chktex.exec.path": "/usr/local/bin/chktex",
     "latex-workshop.formatting.latex": "tex-fmt",
