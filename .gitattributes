@@ -1,0 +1,2 @@
+*.sh text eol=lf
+Justfile text eol=lf
